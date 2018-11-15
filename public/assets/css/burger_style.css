@@ -1,0 +1,68 @@
+/* style sheet */
+#grad1 {
+    height: 100%;
+    background-color: rgb(255, 165, 0); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, orange , yellow, yellow, orange); /* Standard syntax (must be last) */
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ #fries-left {
+     bottom: 125px;
+     right: 200px;
+ }
+ #fries-right {
+    bottom: 125px;
+    left: 200px;
+}
+
+#h1-header {
+    color: #feed58
+}
+
+ul {
+    list-style-type:none;
+}
+
+#burger-footer {
+    font-size: small;
+    color: yellowgreen;
+    text-justify: right;
+}
+/* 
+=========================================
+Media query sm, xs 
+=========================================
+*/
+@media (min-width: 1px) and (max-width: 400px) {
+    #devour-col-left {
+        margin-left: 0;
+    }
+    #devour-col-right {
+        margin-top: 0.5em;
+    }
+}
+
+@media (min-width: 401px){
+    #devour-col-left {
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+    img.photo {
+        height: 150px;
+    }
+    #fries-left {
+        bottom: 0;
+        right: 0;
+    }
+    #fries-right {
+       bottom: 0;
+       left: 0;
+   }
+}

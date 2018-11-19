@@ -2,6 +2,7 @@
 
 module.exports = function(sequelize, DataTypes) {
     var burgers = sequelize.define("burgers", {
+        
         burger_name: {
             type: DataTypes.STRING 
         },
@@ -9,7 +10,10 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.BOOLEAN,
             defaultValue: true
         }
-    });
+    }, {
+        timestamps: false
+    }
+    );
 
     return burgers;
 };

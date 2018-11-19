@@ -1,13 +1,15 @@
 /* Schema */
 
-DROP DATABASE IF EXISTS burgers_db;
-CREATE DATABASE burgers_db;
-USE burgers_db;
+-- DROP DATABASE IF EXISTS burgers_db;
+-- CREATE DATABASE IF NOT EXISTS burgers_db;
+USE tkl5taw79k9f4o91;
 
-CREATE TABLE burgers
+CREATE TABLE if not exists burgers
 (
 	id int NOT NULL AUTO_INCREMENT,
 	burger_name varchar(50) NOT NULL,
 	devoured BOOLEAN DEFAULT false,
+	createAt DATETIME,
+	updateAt DATETIME,
 	PRIMARY KEY (id)
 );

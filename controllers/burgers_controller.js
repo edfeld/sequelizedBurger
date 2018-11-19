@@ -10,12 +10,17 @@ router.get("/", function(req, res) {
     // console.log("db.burgers: ", db.burgers);
     let arrBurgers = []
     db.burgers.findAll({}).then(function(results) {
-      console.log("results[0]: ", results[0].dataValues);
-      for (let i = 0; i < results.length; i++) {
-        arrBurgers.push(results[i].dataValues);
+      // console.log("typeof: ", results);
+      if (results.length > 0) {
+        console.log("results[0]: ", results[0].dataValues);
+        for (let i = 0; i < results.length; i++) {
+          arrBurgers.push(results[i].dataValues);
+        }
+        console.log("arrBurgers: ", {burgers: arrBurgers});
+        res.render("index", {burgers: arrBurgers});
+      } else {
+        res.render("index", {burgers: arrBurgers});
       }
-      console.log("arrBurgers: ", {burgers: arrBurgers});
-      res.render("index", {burgers: arrBurgers});
     });
     // db.Burgers.findAll(function(data) {
     //   var hbsObject = {

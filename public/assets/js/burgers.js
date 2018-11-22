@@ -108,10 +108,12 @@ function getCustomers() {
 // Loop the arrCustomers array and append each element to the dropdown list
 function renderCustomersList(arrCustomers) {
   rowsToAdd= [];
+  let selectCustomers = $("#customer-sel");
   if (!arrCustomers.length) {
-    rowsToAdd.push(createCustomerRow({id: -1, name: "Add a Customer"}));
+    $("#create-customer-div").show();
+      $("#create-burger-div").hide();
+    console.log("pushing add customer======================");
   } else {
-    let selectCustomers = $("#customer-sel");
     for (var i = 0; i < arrCustomers.length; i++) {
       rowsToAdd.push(createCustomerRow(arrCustomers[i]));
       console.log("customer item: ", arrCustomers[i]);

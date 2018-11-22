@@ -21,9 +21,25 @@
 }
 
 #h1-header {
-    color: #feed58
+    color: #feed58;
 }
 
+#customer-label, #add-customer{
+    color: green !important;
+}
+
+#customer-list-label {
+    width: 30%;
+    /* float: left; */
+}
+#burger-input {
+    width: 70%;
+}
+#customer-sel {
+    width: 63%;
+    display: inline-block;
+    /* float: left; */
+}
 ul {
     list-style-type:none;
 }

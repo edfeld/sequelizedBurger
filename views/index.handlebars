@@ -47,13 +47,27 @@
     <div class="row">
       <div class="col">
       </div>
-      <div class="col-12 col-md-5 text-danger mt-3 bg-warning rounded">
+      <div id="create-burger-div" class="col-12 col-md-5 text-danger mt-3 bg-warning rounded">
         <h2>Add a burger</h2>
         <form class="create-form">
 
           <div class="form-group">
             <label for="burg">Burger Name:</label>
             <input type="text" id="burg" name="name">
+            <label id="customer-list-label" for="customer-sel">Customer:</label>
+							<select class="form-control" id="customer-sel">
+  						</select>
+          </div>
+          <button class="w-50 mb-4" type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="create-customer-div" class="col-12 col-md-5 ml-2 text-danger mt-3 bg-warning rounded">
+        <h2 id="add-customer">Add a customer</h2>
+        <form class="create-customer-form">
+
+          <div class="form-group">
+            <label id="customer-label" for="customer">Customer name:</label>
+            <input type="text" id="customer" name="Custname">
           </div>
           <button class="w-50 mb-4" type="submit">Submit</button>
         </form>

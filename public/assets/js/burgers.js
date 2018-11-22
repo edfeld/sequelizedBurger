@@ -109,7 +109,7 @@ function getCustomers() {
 function renderCustomersList(arrCustomers) {
   rowsToAdd= [];
   if (!arrCustomers.length) {
-    // nothing
+    rowsToAdd.push(createCustomerRow({id: -1, name: "Add a Customer"}));
   } else {
     let selectCustomers = $("#customer-sel");
     for (var i = 0; i < arrCustomers.length; i++) {

@@ -49,14 +49,18 @@
       </div>
       <div id="create-burger-div" class="col-12 col-md-5 text-danger mt-3 bg-warning rounded">
         <h2>Add a burger</h2>
-        <form class="create-form">
+        <form class="create-form ml-1">
 
           <div class="form-group">
-            <label for="burg">Burger Name:</label>
-            <input type="text" id="burg" name="name">
-            <label id="customer-list-label" for="customer-sel">Customer:</label>
-							<select class="form-control" id="customer-sel">
-  						</select>
+            <div class="row mb-1">
+              <label id="burg-label" for="burg">Burger Name:</label>
+              <input type="text" id="burg" name="name">
+            </div>
+            <div class="row">
+              <label id="customer-list-label" for="customer-sel">Customer:</label>
+              <select class="form-control" id="customer-sel">
+              </select>
+            </div>
           </div>
           <button class="w-50 mb-4" type="submit">Submit</button>
         </form>

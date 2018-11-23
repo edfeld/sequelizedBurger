@@ -28,7 +28,7 @@
     color: green !important;
 }
 
-#customer-list-label {
+#customer-list-label, #burg-label {
     width: 30%;
     /* float: left; */
 }

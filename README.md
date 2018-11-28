@@ -1,4 +1,4 @@
-# Burger app using Node, Express and Handlebars
+# Burger app using Node, Express, Handlebars, Sequilize and MySQL -- A Full stack application
 
 * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
@@ -12,4 +12,6 @@
 
 * The user must create customers who are attached to the burgers. Each customer can have multiple burgers -- there is a one to many relationship. SQL inner joins are used in the app.  The corresponding customers are displayed inside the ready to be devoured burgers list and the devoured burgers list.  
 
-* This app utilized Sequelize as the ORM layer into the MySQL database.  
+* This app utilized Sequelize as the ORM layer into the MySQL database.  This app uses Create, Read and Update from the CRUD database operations.
+
+* link to this app on Heroku:  `https://still-beyond-23927.herokuapp.com/`

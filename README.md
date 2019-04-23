@@ -1,4 +1,4 @@
-# Eat-Da-Burger! -- A Full stack restaurant app
+# Eat-Da-Burger! -- A Full Stack restaurant app
 
 ![EatDaBurger_2](https://user-images.githubusercontent.com/18557337/56597438-4d293200-65a7-11e9-8615-c76d5e803478.png)
 

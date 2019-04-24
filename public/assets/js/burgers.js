@@ -30,6 +30,23 @@ $(function () {
     );
   });
 
+    // The delete click listener
+    $(".change-delete").on("click", function (event) {
+      var id = $(this).data("id");
+      console.log("delete id: ", id);
+      let DeleteId = {id: id}
+      $.ajax("/api/burgers/" + id, {
+        type: "DELETE",
+        data: DeleteId
+      }).then(
+        function (result) {
+          console.log("Delete Result", result);
+          // Reload the page to get the updated list
+          location.reload();
+        }
+      );
+    })
+
   // "create a new burger" listener. 
   $(".create-form").on("submit", function (event) {
     // Make sure to preventDefault on a submit event.
@@ -134,9 +151,3 @@ function createCustomerRow(customer) {
     return listOption;
 }
 
-// function createNewCustomer (strCustomer) {
-//   var listOption = $("<option>");
-//     listOption.attr("value", -1);
-//     listOption.text(customer.name);
-//     return listOption;
-// }

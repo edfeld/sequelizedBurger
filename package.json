@@ -23,9 +23,9 @@
     "express-handlebars": "^3.0.0",
     "jquery": "^3.4.0",
     "mysql": "^2.16.0",
-    "mysql2": "^1.6.4",
+    "mysql2": "^1.6.5",
     "popper.js": "^1.15.0",
-    "sequelize": "^4.44.0"
+    "sequelize": "^5.8.5"
   },
   "devDependencies": {}
 }

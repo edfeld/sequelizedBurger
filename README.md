@@ -18,7 +18,7 @@ Whenever a user submits a burger's name, the app will display the burger on the 
 
 Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
 
-Each burger in the Devoured area has a `Delete` button. When the user click delete, the burger will be deleted from the database and the page.
+Each burger in the Devoured area has a `Delete` button. When the user click delete, the burger will be deleted from the database and removed from the page.
 
 The app will store every burger in a database, whether devoured or not.
 

@@ -70,16 +70,7 @@ router.put("/api/burgers/:id", function (req, res) {
       res.status(200).end();
     }
   });
-  // db.burgers.updateOne({
-  //   devoured: req.body.devoured
-  // }, condition, function(result) {
-  //   if (result.changedRows == 0) {
-  //     // If no rows were changed, then the ID must not exist, so 404
-  //     return res.status(404).end();
-  //   } else {
-  //     res.status(200).end();
-  //   }
-  // });
+  
 });
 
 // Detele Route 
